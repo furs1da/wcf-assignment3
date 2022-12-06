@@ -1,0 +1,17 @@
+﻿@model ComputerReference.Computer
+
+<form asp-action="Delete" asp-controller="Home" method="post">
+     
+    <div class="col-sm-4"><label>@Model.Name</label></div>
+     <input type="hidden" asp-for="@Model.Uuid" />
+
+    <div class="row">
+        <div class="col-sm-4 offset-sm-2">
+            <button type="submit" class="btn btn-primary">Delete</button>
+
+            @* return user to main admin page after add, or to search page otherwise *@
+            <a asp-action="AllComputers" my-button>Cancel</a>
+        </div>
+    </div>
+   
+</form>

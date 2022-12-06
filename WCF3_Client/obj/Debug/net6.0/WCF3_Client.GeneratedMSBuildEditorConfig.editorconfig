@@ -15,16 +15,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\WCF3_Client
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/College/5th semester/PROG3170 - Programming Distributed App/Assignment 3/wcf-assignment3/WCF3_Client/Views/Home/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/College/5th semester/PROG3170 - Programming Distributed App/Assignment 3/wcf-assignment3/WCF3_Client/Views/Home/AllComputers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGxDb21wdXRlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/College/5th semester/PROG3170 - Programming Distributed App/Assignment 3/wcf-assignment3/WCF3_Client/Views/Home/ComputerDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wdXRlckRldGFpbHMuY3NodG1s
+[D:/College/5th semester/PROG3170 - Programming Distributed App/Assignment 3/wcf-assignment3/WCF3_Client/Views/Home/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/College/5th semester/PROG3170 - Programming Distributed App/Assignment 3/wcf-assignment3/WCF3_Client/Views/Home/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/College/5th semester/PROG3170 - Programming Distributed App/Assignment 3/wcf-assignment3/WCF3_Client/Views/Home/Edit.cshtml]

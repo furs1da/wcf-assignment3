@@ -77,6 +77,62 @@ namespace WCF3_Client.Controllers
             return View(computerList);
         }
 
+        public IActionResult Edit(string uuid)
+        {
+            ComputerReference.ComputerServiceClient client = new ComputerReference.ComputerServiceClient();
+            ComputerReference.Computer computer = new ComputerReference.Computer();
+            computer = client.GetComputer(uuid);
+
+            ViewBag.Brands = client.GetAllBrands();
+            ViewBag.OS = client.GetAllOses();
+            return View(computer);
+        }
+
+        public IActionResult Create()
+        {
+            ComputerReference.ComputerServiceClient client = new ComputerReference.ComputerServiceClient();
+            ComputerReference.Computer computer = new ComputerReference.Computer();
+
+            ViewBag.Brands = client.GetAllBrands();
+            ViewBag.OS = client.GetAllOses();
+            return View(computer);
+        }
+        [HttpPost]
+        public IActionResult Create(ComputerReference.Computer computer)
+        {
+            ComputerReference.ComputerServiceClient client = new ComputerReference.ComputerServiceClient();
+            client.AddComputer(computer);
+            
+            return RedirectToAction("AllComputers");
+        }
+        [HttpGet]
+        public IActionResult Delete(string uuid, string get)
+        {
+            ComputerReference.ComputerServiceClient client = new ComputerReference.ComputerServiceClient();
+            ComputerReference.Computer computer = new ComputerReference.Computer();
+            computer = client.GetComputer(uuid);
+ 
+            return View(computer);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(string uuid)
+        {
+            ComputerReference.ComputerServiceClient client = new ComputerReference.ComputerServiceClient();
+            client.DeleteComputer(uuid);
+
+            return RedirectToAction("AllComputers");
+        }
+
+        [HttpPost]
+        public IActionResult Edit(ComputerReference.Computer computer)
+        {
+            ComputerReference.ComputerServiceClient client = new ComputerReference.ComputerServiceClient();
+            client.UpdateComputer(computer);
+
+            return RedirectToAction("AllComputers");
+        }
+
 
         public IActionResult Privacy()
         {
