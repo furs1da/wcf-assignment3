@@ -1,0 +1,12 @@
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\bin\Debug\ComputerService_Host.exe.config
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\bin\Debug\ComputerService_Host.exe
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\bin\Debug\ComputerService_Host.pdb
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\bin\Debug\WcfService_8703133.dll
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\bin\Debug\WcfService_8703133.pdb
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\bin\Debug\WcfService_8703133.dll.config
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\obj\Debug\ComputerService_Host.csproj.AssemblyReference.cache
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\obj\Debug\ComputerService_Host.csproj.SuggestedBindingRedirects.cache
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\obj\Debug\ComputerService_Host.csproj.CoreCompileInputs.cache
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\obj\Debug\ComputerService_Host.csproj.CopyComplete
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\obj\Debug\ComputerService_Host.exe
+D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\ComputerService_Host\obj\Debug\ComputerService_Host.pdb

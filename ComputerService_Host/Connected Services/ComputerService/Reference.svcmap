@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="2dc7561d-1994-45ab-aba7-f26b062cf872" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/wcf_assignment_3/ComputerService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ComputerService.wsdl" MetadataType="Wsdl" ID="572f2968-a664-4271-88ec-a765afdc0a5a" SourceId="1" SourceUrl="http://localhost/wcf_assignment_3/ComputerService.svc?wsdl" />
+    <MetadataFile FileName="ComputerService.disco" MetadataType="Disco" ID="4517906d-4701-4009-9f8b-291755f6e21a" SourceId="1" SourceUrl="http://localhost/wcf_assignment_3/ComputerService.svc?disco" />
+    <MetadataFile FileName="ComputerService.xsd" MetadataType="Schema" ID="0ca43e8c-b4ab-4d23-84cb-fdae7a4e1052" SourceId="1" SourceUrl="http://localhost/wcf_assignment_3/ComputerService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ComputerService1.xsd" MetadataType="Schema" ID="4eed8da5-866e-472b-8451-9b76faece777" SourceId="1" SourceUrl="http://localhost/wcf_assignment_3/ComputerService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ComputerService2.xsd" MetadataType="Schema" ID="94645c21-f104-46c5-a3e1-38f0c36adbfd" SourceId="1" SourceUrl="http://localhost/wcf_assignment_3/ComputerService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

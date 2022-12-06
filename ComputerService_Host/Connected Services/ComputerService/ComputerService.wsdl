@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ComputerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/wcf_assignment_3/ComputerService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/wcf_assignment_3/ComputerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/wcf_assignment_3/ComputerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService_8703133" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IComputerService_AddComputer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddComputer" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_AddComputer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddComputerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_UpdateComputer_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateComputer" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_UpdateComputer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateComputerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_DeleteComputer_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComputer" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_DeleteComputer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComputerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_GetComputer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComputer" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_GetComputer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComputerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_GetAllComputers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllComputers" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_GetAllComputers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllComputersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_GetAllBrands_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBrands" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_GetAllBrands_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBrandsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_GetAllOses_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOses" />
+  </wsdl:message>
+  <wsdl:message name="IComputerService_GetAllOses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOsesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IComputerService">
+    <wsdl:operation name="AddComputer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComputerService/AddComputer" message="tns:IComputerService_AddComputer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComputerService/AddComputerResponse" message="tns:IComputerService_AddComputer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComputer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComputerService/UpdateComputer" message="tns:IComputerService_UpdateComputer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComputerService/UpdateComputerResponse" message="tns:IComputerService_UpdateComputer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComputer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComputerService/DeleteComputer" message="tns:IComputerService_DeleteComputer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComputerService/DeleteComputerResponse" message="tns:IComputerService_DeleteComputer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComputer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComputerService/GetComputer" message="tns:IComputerService_GetComputer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComputerService/GetComputerResponse" message="tns:IComputerService_GetComputer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllComputers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComputerService/GetAllComputers" message="tns:IComputerService_GetAllComputers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComputerService/GetAllComputersResponse" message="tns:IComputerService_GetAllComputers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBrands">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComputerService/GetAllBrands" message="tns:IComputerService_GetAllBrands_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComputerService/GetAllBrandsResponse" message="tns:IComputerService_GetAllBrands_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOses">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComputerService/GetAllOses" message="tns:IComputerService_GetAllOses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComputerService/GetAllOsesResponse" message="tns:IComputerService_GetAllOses_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IComputerService" type="tns:IComputerService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddComputer">
+      <soap:operation soapAction="http://tempuri.org/IComputerService/AddComputer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComputer">
+      <soap:operation soapAction="http://tempuri.org/IComputerService/UpdateComputer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComputer">
+      <soap:operation soapAction="http://tempuri.org/IComputerService/DeleteComputer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComputer">
+      <soap:operation soapAction="http://tempuri.org/IComputerService/GetComputer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllComputers">
+      <soap:operation soapAction="http://tempuri.org/IComputerService/GetAllComputers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBrands">
+      <soap:operation soapAction="http://tempuri.org/IComputerService/GetAllBrands" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOses">
+      <soap:operation soapAction="http://tempuri.org/IComputerService/GetAllOses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ComputerService">
+    <wsdl:port name="BasicHttpBinding_IComputerService" binding="tns:BasicHttpBinding_IComputerService">
+      <soap:address location="http://localhost/wcf_assignment_3/ComputerService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
