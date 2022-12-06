@@ -5,20 +5,20 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>D:\College\5th semester\PROG3170 - Programming Distributed App\Assignment 3\wcf-assignment3\WcfService_8703133\bin\app.publish\</_PublishTargetUrl>
-    <History>True|2022-12-06T02:45:46.0838093Z;</History>
+    <History>True|2022-12-06T04:11:49.7841774Z;False|2022-12-05T23:11:38.6762981-05:00;True|2022-12-05T23:10:24.1440432-05:00;True|2022-12-05T23:09:12.4410723-05:00;True|2022-12-05T21:45:46.0838093-05:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/WcfService_8703133.dll">
-      <publishTime>12/05/2022 21:45:45</publishTime>
+      <publishTime>12/05/2022 23:11:49</publishTime>
     </File>
     <File Include="bin/WcfService_8703133.pdb">
-      <publishTime>12/05/2022 21:45:45</publishTime>
+      <publishTime>12/05/2022 23:11:49</publishTime>
     </File>
     <File Include="ComputerService.svc">
       <publishTime>12/05/2022 21:34:39</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/05/2022 21:45:45</publishTime>
+      <publishTime>12/05/2022 23:09:12</publishTime>
     </File>
   </ItemGroup>
 </Project>

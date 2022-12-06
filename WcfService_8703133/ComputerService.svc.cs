@@ -37,7 +37,12 @@ namespace WcfService_8703133
                 Computer computer = new Computer();
                 computer.Uuid = computerData.Tables[0].Rows[row][0].ToString();
                 computer.Name = computerData.Tables[0].Rows[row][1].ToString();
-                computer.ImageUrl = computerData.Tables[0].Rows[row][2].ToString();
+                if (String.IsNullOrEmpty(computerData.Tables[0].Rows[row][2].ToString()))
+                    computer.ImageUrl = "";
+                else
+                {
+                    computer.ImageUrl = computerData.Tables[0].Rows[row][2].ToString();
+                }
                 computer.Quantity = int.Parse(computerData.Tables[0].Rows[row][3].ToString());
                 computer.Price = double.Parse(computerData.Tables[0].Rows[row][4].ToString());
                 computer.Os = int.Parse(computerData.Tables[0].Rows[row][5].ToString());
@@ -139,7 +144,12 @@ namespace WcfService_8703133
             
             computer.Uuid = computerData.Tables[0].Rows[0][0].ToString();
             computer.Name = computerData.Tables[0].Rows[0][1].ToString();
-            computer.ImageUrl = computerData.Tables[0].Rows[0][2].ToString();
+            if (String.IsNullOrEmpty(computerData.Tables[0].Rows[0][2].ToString()))
+                computer.ImageUrl = "";
+            else
+            {
+                computer.ImageUrl = computerData.Tables[0].Rows[0][2].ToString();
+            }
             computer.Quantity = int.Parse(computerData.Tables[0].Rows[0][3].ToString());
             computer.Price = double.Parse(computerData.Tables[0].Rows[0][4].ToString());
             computer.Os = int.Parse(computerData.Tables[0].Rows[0][5].ToString());
